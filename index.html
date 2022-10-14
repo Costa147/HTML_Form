@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <link rel="StyleSheet" href="Style.css">
+</head>
+<body>
+    <!--The action attribute specifies where to send the form-data when a form is submitted-->
+    <form action="#">
+        <!--The lable For attribute specifies which form element a label is bound to-->
+        <lable for ="FirstName">First Name:</lable><br> 
+        <input type="text" id="firstname" name="firstname" placeholder="Enter Your Name"><br><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" name="pwd" id="pwd" min-length="8"><br><br>        
+        <input type="file" name="file" id="file" accept="pdf"> <!--Accepts only PDF type files-->
+        <h3>Comment on this blog</h3>
+            <input type="radio" id="like" name="like" value="like">
+            <label for="like">Yes</label><br>
+            <input type="radio" id="like" name="like" value="like">
+            <label for="like">No</label><br><br>
+        <label for="email">Enter Your Email:</label><br>
+        <input type="email" id="mail" placeholder="Enter YOur Email"><br><br>
+        <input type="submit" class="btnSubmit">
+    </form>
+</body>
+</html>
